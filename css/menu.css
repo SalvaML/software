@@ -5,6 +5,9 @@
   align-items: center;
   justify-content: center;
 }
+.list-group-item.list-group-item-action{
+  margin-bottom: 3%;
+}
 .aaaa {
   display: block;
   width: 100%;
