@@ -1,0 +1,42 @@
+body{
+  height: 100vh;
+}
+.Botones{
+
+}
+.Boton{
+  margin-bottom: 4%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn.btn-primary{
+  width: 65%;
+}
+
+.padre{
+  height: 100%;
+}
+.opc{
+  margin-left: 18%;
+  margin-bottom: 3%;
+}
+.centrar{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.row{
+  width: 100%;
+}
+.col-5{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+img{
+  width: 70%;
+  height: auto;
+}
