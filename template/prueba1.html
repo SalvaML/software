@@ -12,136 +12,221 @@
 </head>
 
 <body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../imagenes/logo-proyecta.png" class="img-fluid" alt="Responsive image">
+                Gestion de miembros Proyecta UNI    
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="MenuB.html">Menu Principal</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="prueba1.html">Informacion de miembro</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="info_general1.html">Historial de miembro</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Secciones de informacion
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="info_general1.html">Participacion</a></li>
+                    <li><a class="dropdown-item" href="info_general2.html">Rendimiento</a></li>
+                    <li><a class="dropdown-item" href="info_general3.html">Medallas</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <a href="javascript:history.back(-1);" class="btn btn-secondary">Regresar   
+                </a>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </header>
+    <main class="main">
 
-    <div class="burbujas">
-        <div class="burbuja"> </div>
-        <div class="burbuja"> </div>
-        <div class="burbuja"> </div>
-        <div class="burbuja"> </div>
-        <div class="burbuja"> </div>
-    </div>
-
-    <div class="contenido">
-        <div class="filtros">
-            <ul>
-
-                <li><label for = 'Codigo'>Codigo</label>         <input type = "text" placeholder = "Codigo UNI del miembro" maxlength = "9" id = "Codigo"> </li>
-                <li><label for = 'Nombre'>Nombre</label>         <input type = "text" placeholder = "Nombre del miembro" maxlength = "20" id = "Nombre"> </li>
-                <li><label for = 'Apellido'>Apellido</label>     <input type = "text" placeholder = "Apellido del miembro" maxlength = "20" id = "Apellido"> </li>
-                <li><label for = 'Facultad'>Facultad</label>     <input type = "text" placeholder = "Facultad del miembro" maxlength = "6" id = "Facultad"> </li>
-
-            </ul>
+        <div class="burbujas">
+            <div class="burbuja"> </div>
+            <div class="burbuja"> </div>
+            <div class="burbuja"> </div>
+            <div class="burbuja"> </div>
+            <div class="burbuja"> </div>
         </div>
 
-        <div class="botones">
-            <input type = "button" value = "Agregar Filtros">
-            <input type = "button" value = "Buscar">
+        <div class="contenido">
+            <div class="filtros">
+                <ul>
+
+                    <li><label for = 'Codigo'>Codigo</label>         <input type = "text" placeholder = "Codigo UNI del miembro" maxlength = "9" id = "Codigo"> </li>
+                    <li><label for = 'Nombre'>Nombre</label>         <input type = "text" placeholder = "Nombre del miembro" maxlength = "20" id = "Nombre"> </li>
+                    <li><label for = 'Apellido'>Apellido</label>     <input type = "text" placeholder = "Apellido del miembro" maxlength = "20" id = "Apellido"> </li>
+                    <li><label for = 'Facultad'>Facultad</label>     <input type = "text" placeholder = "Facultad del miembro" maxlength = "6" id = "Facultad"> </li>
+
+                </ul>
+            </div>
+
+            <div class="botones">
+                <input type = "button" value = "Agregar Filtros">
+                <input type = "button" value = "Buscar">
+            </div>
+
+            <div class="perfiles">
+                <!--Se agregan con Django-->
+                <div class="alum1">
+                    <div class="foto">
+                        <a href="info_general1.html"><img src = "../imagenes/trebol.jpg" class="alumnfoto"></a>
+                    </div>
+
+                    <div class="descripcion">
+                        <div class="proyecto">
+                            <ul>
+                                <li>Proyecto xyz</li>
+                                <li>Proyecto 123</li>
+                                <li>Proyecto ABC</li>
+                            </ul>
+                        </div>
+
+                        <div class="cargo">
+                            <ul>
+                                <li>Miembro</li>
+                                <li>Miembro - Director de MK</li>
+                                <li>Director de proyecto</li>
+                            </ul>
+                        </div>
+
+                        <div class="medalla">
+                            <ul class="medallas">
+                                <li><img src = "../imagenes/trebol.jpg" height="10px"></li>
+                                <li><img src = "../imagenes/trebol.jpg" height="10px"></li>
+                                <li><img src = "../imagenes/trebol.jpg" height="10px"></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="alum1">
+                    <div class="foto">
+                        <img src = "../imagenes/trebol.jpg" class="alumnfoto">
+                    </div>
+
+                    <div class="descripcion">
+                        <div class="proyecto">
+                            <ul>
+                                <li>Navidad para todos</li>
+                                <li>Proyecto 123</li>
+                                <li>Proyecto ABC</li>
+                            </ul>
+                        </div>
+
+                        <div class="cargo">
+                            <ul>
+                                <li>Director de proyecto</li>
+                                <li>Miembro - Director de MK</li>
+                                <li>Director de proyecto</li>
+                            </ul>
+                        </div>
+
+                        <div class="medalla">
+                            <ul class="medallas">
+                                <li><img src = "../imagenes/trebol.jpg" height="10px"></li>
+                                <li><img src = "../imagenes/trebol.jpg" height="10px"></li>
+                                <li><img src = "../imagenes/trebol.jpg" height="10px"></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="alum1">
+                    <div class="foto">
+                        <img src = "../imagenes/trebol.jpg" class="alumnfoto">
+                    </div>
+
+                    <div class="descripcion">
+                        <div class="proyecto">
+                            <ul>
+                                <li>Proyecto xyz</li>
+                                <li>Proyecto 123</li>
+                                <li>Proyecto ABC</li>
+                            </ul>
+                        </div>
+
+                        <div class="cargo">
+                            <ul>
+                                <li>Miembro</li>
+                                <li>Miembro - Director de MK</li>
+                                <li>Director de proyecto</li>
+                            </ul>
+                        </div>
+
+                        <div class="medalla">
+                            <ul class="medallas">
+                                <li><img src = "../imagenes/trebol.jpg" height="10px"></li>
+                                <li><img src = "../imagenes/trebol.jpg" height="10px"></li>
+                                <li><img src = "../imagenes/trebol.jpg" height="10px"></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
         </div>
-
-        <div class="perfiles">
-            <!--Se agregan con Django-->
-            <div class="alum1">
-                <div class="foto">
-                    <a href="info_general1.html"><img src = "../imagenes/trebol.jpg" class="alumnfoto"></a>
-                </div>
-
-                <div class="descripcion">
-                    <div class="proyecto">
-                        <ul>
-                            <li>Proyecto xyz</li>
-                            <li>Proyecto 123</li>
-                            <li>Proyecto ABC</li>
-                        </ul>
-                    </div>
-
-                    <div class="cargo">
-                        <ul>
-                            <li>Miembro</li>
-                            <li>Miembro - Director de MK</li>
-                            <li>Director de proyecto</li>
-                        </ul>
-                    </div>
-
-                    <div class="medalla">
-                        <ul class="medallas">
-                            <li><img src = "../imagenes/trebol.jpg" height="10px"></li>
-                            <li><img src = "../imagenes/trebol.jpg" height="10px"></li>
-                            <li><img src = "../imagenes/trebol.jpg" height="10px"></li>
-                        </ul>
-                    </div>
-
-                </div>
+    </main>
+    
+    <footer class="footer mt-auto py-3 bg-dark text-muted">
+      <hr>
+      <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-6 col-lg-6 mb-3">
+                <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="#">
+                    <img src="../imagenes/logo-dark-proyecta-150.png" class="img-fluid" alt="Responsive image">
+                    <span>Proyecta UNI</span>
+                </a>
+                <ul class="list-unstyled small text-muted">
+                    <li class="mb-2">Sistema de gestión de miembros de Proyecta UNI.</li>
+                    <li class="mb-2"></li>
+                    <li class="mb-2">Version 1.0.0</li>
+                    <li class="mb-2">Diseñado por: Acevedo, Quintana, Mechato</li>
+                </ul>
             </div>
-
-            <div class="alum1">
-                <div class="foto">
-                    <img src = "../imagenes/trebol.jpg" class="alumnfoto">
-                </div>
-
-                <div class="descripcion">
-                    <div class="proyecto">
-                        <ul>
-                            <li>Navidad para todos</li>
-                            <li>Proyecto 123</li>
-                            <li>Proyecto ABC</li>
-                        </ul>
-                    </div>
-
-                    <div class="cargo">
-                        <ul>
-                            <li>Director de proyecto</li>
-                            <li>Miembro - Director de MK</li>
-                            <li>Director de proyecto</li>
-                        </ul>
-                    </div>
-
-                    <div class="medalla">
-                        <ul class="medallas">
-                            <li><img src = "../imagenes/trebol.jpg" height="10px"></li>
-                            <li><img src = "../imagenes/trebol.jpg" height="10px"></li>
-                            <li><img src = "../imagenes/trebol.jpg" height="10px"></li>
-                        </ul>
-                    </div>
-
-                </div>
+            <div class="col-6 col-lg-2 mb-3">
+                <h5>Menu</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="prueba1.html">
+                    Informacion de miembros</a></li>
+                </ul>
             </div>
-
-            <div class="alum1">
-                <div class="foto">
-                    <img src = "../imagenes/trebol.jpg" class="alumnfoto">
-                </div>
-
-                <div class="descripcion">
-                    <div class="proyecto">
-                        <ul>
-                            <li>Proyecto xyz</li>
-                            <li>Proyecto 123</li>
-                            <li>Proyecto ABC</li>
-                        </ul>
-                    </div>
-
-                    <div class="cargo">
-                        <ul>
-                            <li>Miembro</li>
-                            <li>Miembro - Director de MK</li>
-                            <li>Director de proyecto</li>
-                        </ul>
-                    </div>
-
-                    <div class="medalla">
-                        <ul class="medallas">
-                            <li><img src = "../imagenes/trebol.jpg" height="10px"></li>
-                            <li><img src = "../imagenes/trebol.jpg" height="10px"></li>
-                            <li><img src = "../imagenes/trebol.jpg" height="10px"></li>
-                        </ul>
-                    </div>
-
-                </div>
+            <div class="col-6 col-lg-2 mb-3">
+                <h5>Busqueda de miembros</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="info_general1.html">Participacion</a></li>
+                    <li class="mb-2"><a href="info_general2.html">Rendimiento</a></li>
+                    <li class="mb-2"><a href="info_general3.html">Medallas</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-lg-2 mb-3">
+                <h5>Contáctanos</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="https://github.com/SalvaML/software/">
+                    Github</a></li>
+                </ul>
             </div>
 
         </div>
-    </div>
-
+      </div>
+      <hr>
+    </footer>
 
 
 </body>
